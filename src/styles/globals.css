@@ -234,14 +234,7 @@ body {
   /* font-size: 20px; */
 }
 
-.input {
-  position: absolute;
-  top: 68%;
-  color: rgb(208, 26, 208);
-  width: 50%;
-  height: 7%;
-  font-weight: bold;
-}
+
 
 .price-tag {
   position: absolute;
