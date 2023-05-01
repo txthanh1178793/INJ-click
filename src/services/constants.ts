@@ -32,4 +32,4 @@ export const IS_TESTNET: Boolean = [
 
 export const COUNTER_CONTRACT_ADDRESS =
   "inj1t8rhq5vcxqgw68ldg0k2mjxjvzshuah6tnugvy";
-export const PREDICT_CONTRACT_ADDRESS = "inj1t5ee7qym3hrepdl55a7waajczxv99tyehch9w0";
+export const PREDICT_CONTRACT_ADDRESS = "inj19qwysnzvw6h6l0e6aufgfd4747em25etjkcyqv";
