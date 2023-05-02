@@ -38,10 +38,10 @@ const CurrentBet = (props: Props) => {
     }, [data]);
 
     function handleStartBet() {
-        startBet();
+        startBet(inputValue);
     }
     function handleEndBet() {
-        endBet();
+        endBet(inputValue);
     }
     function handleUpBet() {
         upBet(inputValue);
