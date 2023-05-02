@@ -29,7 +29,7 @@ function Home({ }: Props) {
     downBet,
     claimReward,
   } = usePredictStore();
-  // const { count, isLoading, incrementCount, setContractCounter } = useCounterStore();
+
   useEffect(() => {
     setInfo(data);
   }, [data]);
