@@ -30,8 +30,8 @@ type StoreState = {
     },
     queryBetInfo: (value: string) => void,
     queryReward: (address: string, id: string) => void,
-    startBet: () => void,
-    endBet: () => void,
+    startBet: (value: string) => void,
+    endBet: (value: string) => void,
     upBet: (value: string) => void,
     downBet: (value: string) => void,
     claimReward: (value: string) => void,
@@ -53,8 +53,8 @@ const PredictContext = createContext<StoreState>({
     },
     queryBetInfo: (value) => { },
     queryReward: (address, id) => { },
-    startBet: () => { },
-    endBet: () => { },
+    startBet: (value) => { },
+    endBet: (value) => { },
     upBet: (value) => { },
     downBet: (value) => { },
     claimReward: (value) => { },
@@ -152,7 +152,7 @@ const PredictContextProvider = (props: Props) => {
             alert((e as any).message);
         }
     }
-    async function startBet() {
+    async function startBet(value: string) {
         if (!injectiveAddress) {
             alert("No Wallet Connected");
             return;
@@ -164,7 +164,7 @@ const PredictContextProvider = (props: Props) => {
                 sender: injectiveAddress,
                 msg: {
                     start: {
-                        price: '10000'
+                        price: value
                     },
                 },
             });
@@ -179,7 +179,7 @@ const PredictContextProvider = (props: Props) => {
 
         }
     }
-    async function endBet() {
+    async function endBet(value: string) {
         if (!injectiveAddress) {
             alert("No Wallet Connected");
             return;
@@ -191,7 +191,7 @@ const PredictContextProvider = (props: Props) => {
                 sender: injectiveAddress,
                 msg: {
                     end: {
-                        price: "1000"
+                        price: value
                     },
                 },
             });
