@@ -58,10 +58,10 @@ function Home({ }: Props) {
   function handleChange(event: any) {
     let { value, min, max } = event.target;
 
-    if (Number(value) > 1000) {
+    if (Number(value) > 100000000) {
       value = 1000;
     }
-    if (Number(value) < 0.001) {
+    if (Number(value) < 0) {
       value = 0.001;
     }
     setInputValue(value);
