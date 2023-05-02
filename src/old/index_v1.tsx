@@ -19,7 +19,7 @@ function Home({ }: Props) {
     upPosition: '0',
     downPosition: '0',
   });
-
+  //
   const { data,
     queryBetInfo,
     queryReward,
